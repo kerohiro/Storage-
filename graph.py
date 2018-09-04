@@ -10,11 +10,15 @@ import shutoku as sh
 
 
 def main():
+    #外部コマンドの実行
     cmd = ("df -h > data.txt")
     sh.out_cmd(cmd)
+    #外部コマンドの実行結果の取得
+    #今後は外部コマンドの実行と同時に取得できるようにする。
     F = open("data.txt",encoding="utf-8")
     s = F.read().splitlines()
     F.close()
+    #ここら辺は今後for文等を使って汎用化する
     All = s[1].split()
     data = np.array([All[2].strip('Gi'),All[3].strip('Gi')])
     label = ["Used","Avail"]
