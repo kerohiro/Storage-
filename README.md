@@ -1,4 +1,8 @@
 # Storageを円グラフで可視化
+## 環境
+MacOS High Sierra
+Python3.6
+
 ## 実行方法
 ターミナルで`graph.py`を実行(`python graph.py`)
 ## 機能
