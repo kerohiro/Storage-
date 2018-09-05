@@ -1,6 +1,6 @@
 # Storageを円グラフで可視化
 ## 環境
-MacOS High Sierra
+MacOS High Sierra  
 Python3.6
 
 ## 実行方法
